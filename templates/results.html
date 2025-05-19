@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Results</title>
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f2f5;
+        padding: 30px;
+        margin: 0;
+        color: #34495e;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 32px 40px;
+        border-radius: 14px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.07);
+        transition: box-shadow 0.3s ease;
+    }
+    .container:hover {
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.10);
+    }
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 35px;
+        font-size: 2.25rem;
+        font-weight: 700;
+        user-select: none;
+        letter-spacing: -0.03em;
+    }
+    .mcq {
+        margin-bottom: 28px;
+        padding: 22px 28px;
+        background-color: #f9fcff;
+        border-left: 6px solid #1e90ff;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(30, 144, 255, 0.15);
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+        cursor: default;
+    }
+    .mcq:hover {
+        transform: translateY(-4px);
+        background-color: #e6f0ff;
+        box-shadow: 0 14px 40px rgba(30, 144, 255, 0.25);
+    }
+    .question {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #1e90ff;
+        margin-bottom: 16px;
+        user-select: text;
+    }
+    .options {
+        margin: 12px 0 0 0;
+    }
+    .option {
+        padding: 12px 18px;
+        margin: 8px 0;
+        border: 1.5px solid #cce4ff;
+        border-radius: 8px;
+        background-color: #f4faff;
+        color: #2a4365;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        user-select: none;
+    }
+    .option:hover,
+    .option:focus {
+        background-color: #d7eaff;
+        border-color: #1e90ff;
+        box-shadow: 0 0 10px rgba(30, 144, 255, 0.3);
+        outline: none;
+        cursor: pointer;
+    }
+    .correct-answer {
+        font-weight: 700;
+        color: #28a745;
+        margin-top: 18px;
+        font-size: 1.1rem;
+        user-select: text;
+    }
+    a {
+        display: inline-block;
+        padding: 14px 24px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        margin: 10px 8px 0 0;
+        font-weight: 600;
+        font-size: 1rem;
+        box-shadow: 0 8px 22px rgba(0, 123, 255, 0.35);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+        user-select: none;
+    }
+    a:hover,
+    a:focus {
+        background-color: #0056b3;
+        box-shadow: 0 12px 32px rgba(0, 86, 179, 0.45);
+        transform: translateY(-3px);
+        outline: none;
+    }
+    @media (max-width: 600px) {
+        .container {
+            padding: 24px 20px;
+        }
+        h1 {
+            font-size: 1.75rem;
+            margin-bottom: 28px;
+        }
+        .mcq {
+            padding: 18px 20px;
+        }
+        .question {
+            font-size: 1.1rem;
+        }
+        .option {
+            font-size: 0.95rem;
+            padding: 10px 14px;
+        }
+        a {
+            font-size: 0.9rem;
+            padding: 12px 20px;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Generated MCQs</h1>
+
+        {% for mcq in mcqs.split("## MCQ") %}
+            {% if mcq.strip() %}
+                <div class="mcq">
+                    <div class="question">{{ mcq.split('A)')[0].strip() }}</div>
+                    <div class="options">
+                        <div class="option">A) {{ mcq.split('A)')[1].split('B)')[0].strip() }}</div>
+                        <div class="option">B) {{ mcq.split('B)')[1].split('C)')[0].strip() }}</div>
+                        <div class="option">C) {{ mcq.split('C)')[1].split('D)')[0].strip() }}</div>
+                        <div class="option">D) {{ mcq.split('D)')[1].split('Correct Answer:')[0].strip() }}</div>
+                    </div>
+                    <div class="correct-answer">
+                        Correct Answer: {{ mcq.split('Correct Answer:')[1].strip() }}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+        <a href="/download/{{ txt_filename }}">Download as TXT</a>
+        <a href="/download/{{ pdf_filename }}">Download as PDF</a>
+    </div>
+</body>
+</html>
+

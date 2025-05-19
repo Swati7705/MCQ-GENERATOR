@@ -1,0 +1,79 @@
+## MCQ 1
+Question: What does TPR stand for in the context of ROC curves?
+A) True Positive Ratio
+B) True Positive Rate
+C) False Positive Rate
+D) False Positive Ratio
+Correct Answer: B
+
+## MCQ 2
+Question: Which of the following is NOT a use case of ROC curves mentioned in the text?
+A) Medical Diagnostics
+B) Fraud Detection
+C) Weather Forecasting
+D) Customer Churn Prediction
+Correct Answer: C
+
+## MCQ 3
+Question:  What is a confusion matrix?
+A) A graph showing the performance of a classification model.
+B) A table visualizing the performance of a classification model by comparing predicted and actual values.
+C) A formula for calculating classification accuracy.
+D) A type of significance test.
+Correct Answer: B
+
+## MCQ 4
+Question: In a confusion matrix, what does a False Positive represent?
+A) Correctly predicting a negative instance as negative.
+B) Incorrectly predicting a positive instance as negative.
+C) Correctly predicting a positive instance as positive.
+D) Incorrectly predicting a negative instance as positive.
+Correct Answer: D
+
+## MCQ 5
+Question: The formula for classification accuracy is:
+A) TP / TP + FP
+B) TP / TP + FN
+C) (TP + TN) / (TP + TN + FP + FN)
+D) (TP + FN) / (TP + TN + FP + FN)
+Correct Answer: C
+
+## MCQ 6
+Question: Precision is calculated as:
+A) TP / TP + FN
+B) TP / TP + FP
+C) TN / TN + FP
+D) TN / TN + FN
+Correct Answer: B
+
+## MCQ 7
+Question: Recall is also known as:
+A) Specificity
+B) Precision
+C) Sensitivity
+D) F1 Score
+Correct Answer: C
+
+## MCQ 8
+Question: The F1 score is the:
+A) Arithmetic mean of precision and recall.
+B) Geometric mean of precision and recall.
+C) Harmonic mean of precision and recall.
+D) Sum of precision and recall.
+Correct Answer: C
+
+## MCQ 9
+Question: Which metric is best suited for evaluating the performance of a regression model?
+A) Classification Accuracy
+B) Recall
+C) Mean Squared Error (MSE)
+D) F1 Score
+Correct Answer: C
+
+## MCQ 10
+Question: What does a p-value less than 0.05 typically suggest in a significance test?
+A) The null hypothesis should be accepted.
+B) The observed differences are likely due to random chance.
+C) The observed differences are unlikely to have occurred by random chance.
+D) The test is inconclusive.
+Correct Answer: C

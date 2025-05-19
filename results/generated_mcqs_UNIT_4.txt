@@ -1,0 +1,79 @@
+## MCQ 1
+Question: What is machine learning?
+A) The study of algorithms that enable computers to learn from data.
+B) The study of statistical models that enable computers to make predictions.
+C) The study of algorithms and statistical models that enable computers to learn from and make predictions or decisions based on data.
+D) The study of computer programs that can learn from experience.
+Correct Answer: C
+
+## MCQ 2
+Question: Which of the following is NOT a type of machine learning algorithm?
+A) Supervised Learning
+B) Unsupervised Learning
+C) Reinforcement Learning
+D) Procedural Learning
+Correct Answer: D
+
+## MCQ 3
+Question:  Clustering is a type of:
+A) Supervised learning
+B) Unsupervised learning
+C) Reinforcement learning
+D) Both supervised and unsupervised learning
+Correct Answer: B
+
+## MCQ 4
+Question: Which clustering method divides data into non-hierarchical groups and is often centroid-based?
+A) Hierarchical Clustering
+B) Density-Based Clustering
+C) Distribution Model-Based Clustering
+D) Partitioning Clustering
+Correct Answer: D
+
+## MCQ 5
+Question: The K-Means algorithm is an example of which type of clustering?
+A) Hierarchical Clustering
+B) Density-Based Clustering
+C) Partitioning Clustering
+D) Fuzzy Clustering
+Correct Answer: C
+
+## MCQ 6
+Question:  K-Modes clustering is specifically designed for:
+A) Numerical data
+B) Textual data
+C) Categorical data
+D) Image data
+Correct Answer: C
+
+## MCQ 7
+Question: The Hamming distance is used to measure dissimilarity in which clustering algorithm?
+A) K-Means
+B) K-Modes
+C) EM algorithm
+D) Hierarchical clustering
+Correct Answer: B
+
+## MCQ 8
+Question: What does the "E" in the Expectation-Maximization (EM) algorithm stand for?
+A) Estimation
+B) Expectation
+C) Evaluation
+D) Enhancement
+Correct Answer: B
+
+## MCQ 9
+Question: Which algorithm uses Gaussian Mixture Models (GMMs)?
+A) K-Means
+B) K-Modes
+C) Expectation-Maximization
+D) Self-Organizing Map
+Correct Answer: C
+
+## MCQ 10
+Question: Principal Component Analysis (PCA) is primarily used for:
+A) Feature scaling
+B) Dimensionality reduction
+C) Data visualization
+D) Classification
+Correct Answer: B
